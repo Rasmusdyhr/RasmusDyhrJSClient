@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap/css/style.css" />
+
+    <!-- // JS shit
+    //=========================================================-->
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="client.js"></script>
+    <meta charset="UTF-8">
+    <title>SNAKE Menu</title>
+</head>
+<body>
+
+<div class="menucontainer">
+
+    <ul class="pagination">
+        <li id="logoutbtn"><a href="index.html">«</a></li>
+        <li class="active"><a href="menu.html">Home menu <span class="sr-only">(current)</span></a></li>
+        <li><a href="createnewgame.html">Create game</a></li>
+        <li><a href="highscore.html">Show highscores</a></li>
+        <li><a href="deletegame.html">Delete game</a></li>
+        <li><a href="startgame.html">Start game</a></li>
+        <li><a href="index.html">Log out</a></li>
+    </ul>
+</div>
+
+<h1>Start your Snake Game!</h1>
+
+<div class="content">
+    <input type="text" id="startgameid" placeholder="Enter the game ID:">
+    <br>
+    <br>
+    <input type="text" id="oppcontrols" placeholder="enter the opponents controls">
+    <hr>
+    <input type="button" id="startgamebtn" value="Start Game!!!">
+</div>
+
+
+</body>
+</html>

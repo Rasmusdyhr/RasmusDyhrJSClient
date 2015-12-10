@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap/css/style.css" />
+
+    <!-- // JS shit
+    //=========================================================-->
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="client.js"></script>
+    <meta charset="UTF-8">
+    <title>Join Snake game</title>
+</head>
+<body>
+
+<div class="menucontainer">
+
+    <ul class="pagination">
+        <li id="logoutbtn"><a href="index.html">«</a></li>
+        <li class="active"><a href="menu.html">Home menu <span class="sr-only">(current)</span></a></li>
+        <li><a href="createnewgame.html">Create game</a></li>
+        <li><a href="highscore.html">Show highscores</a></li>
+        <li><a href="deletegame.html">Delete game</a></li>
+        <li><a href="startgame.html">Start game</a></li>
+        <li><a href="index.html">Log out</a></li>
+    </ul>
+</div>
+
+<h1 class="snaketext">Join snakegame</h1>
+<br>
+
+<div class="content">
+
+<input type="text" id="joingameid" placeholder="Enter the game name">
+<br>
+<br>
+<input type="button" class="btn-u pull-left" id="joingamebtn" value="Join the game!">
+<hr>
+<br>
+
+<div class="hide">
+    <input type="text" id="oppcontrols" placeholder="enter the opponents controls">
+        <br>
+        <br>
+<input type="button" id="startgamebtn" value="Start the game you've just created.!">
+</div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
