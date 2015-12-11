@@ -33,6 +33,7 @@ else {
             success: function (data) {
 
                 sessionStorage.setItem("userID", data.userid);
+                console.log("this s*** is working!");
                 window.location.href = 'menu.html';
             },
 
@@ -141,13 +142,13 @@ else {
         });
     });
 
-    //Join and execute game
+    //Join game
 
     $("#joingamebtn").click(function(){
         var joinnewgame = {
             gameId: $("#joingameid").val(),
                 opponent: {
-                    id: sessionStorage.getItem('userID')
+                    id: $("oppid").val()
                 } // ends.
 
 
@@ -159,7 +160,7 @@ else {
             data: JSON.stringify(joinnewgame),
 
             success: function(data){
-                sessionStorage.setItem("gameID", data.game);
+                sessionStorage.setItem("gameID", data.gameId);
                 alert("The game was joined. The game ID is: " + sessionStorage.getItem("gameID"));
                 window.location.href= 'startgame.html';
             },
